@@ -3,12 +3,48 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Psychic Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
 </head>
-<body>
+<body class="bg-dark">
+<h1 class="text-light ml-5 mt-5">Psychic Game</h1>
+<p class="text-light ml-5">Guess what letter I'm thinking of!</p>
+
+<div class=" mx-auto">
+    <div class="row mx-auto">
+        
+        <!-- Win box -->
+        
+        <div class="col-2 m-5 bg-light rounded p-5">
+            <div class="row">
+                <h3 class="text-center pb-5 mx-auto">WINS</h3>
+            </div>
+            <div class="row">
+                <button class="bg-success mx-auto w-100 rounded">
+                    <h3 class="text-white" id="totalWins">0</h3>
+                </button> 
+            </div>
+        </div>
+        
+        <!-- Losses box -->
+        
+        <div class="col-2 m-5 bg-light rounded p-5">
+                <div class="row">
+                    <h3 class="text-center pb-5 mx-auto">LOSSES</h3>
+                </div>
+                <div class="row">
+                        <button class="bg-danger center mx-auto w-100 rounded">
+                            <h3 class="text-white" id="totalLosses">0</h3>
+                        </button> 
+                </div>
+            </div>
+    </div>
+<h5 class="text-light mb-5 ml-5">Guesses left:  </h5>
+<h5 class="text-light ml-5">Your guesses so far:  </h5> 
     
+<script src="assets/javascript/game.js"></script>
 </body>
 </html>
