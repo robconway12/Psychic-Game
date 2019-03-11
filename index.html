@@ -16,7 +16,7 @@
 <div class=" mx-auto">
     <div class="row mx-auto">
         
-        <!-- Win box -->
+        <!-- Wins box -->
         
         <div class="col-2 m-5 bg-light rounded p-5">
             <div class="row">
@@ -31,7 +31,7 @@
         
         <!-- Losses box -->
         
-        <div class="col-2 m-5 bg-light rounded p-5">
+        <div class="col-2 m-5 bg-light rounded p-5 w-200em">
                 <div class="row">
                     <h3 class="text-center pb-5 mx-auto">LOSSES</h3>
                 </div>
@@ -42,8 +42,13 @@
                 </div>
             </div>
     </div>
-<h5 class="text-light mb-5 ml-5">Guesses left:  </h5>
-<h5 class="text-light ml-5">Your guesses so far:  </h5> 
+<h5 class="text-light mb-5 ml-5">Guesses left:  </h5><p class="text-light" id="GuessesLeft"> </p>
+
+        <!-- Input text box -->
+
+<label for="guessInput" class="text-white ml-5">Your guesses so far:</label>
+
+<input class="form-control w-50 ml-5" id="guessInput"></input>
     
 <script src="assets/javascript/game.js"></script>
 </body>
