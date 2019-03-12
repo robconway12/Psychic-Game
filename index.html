@@ -42,13 +42,19 @@
                 </div>
             </div>
     </div>
-<h5 class="text-light mb-5 ml-5">Guesses left:  </h5><p class="text-light" id="GuessesLeft"> </p>
+
+        <!-- Guesses Left -->
+
+<div class="row">   
+    <h5 class="text-light mb-5 ml-5 col-2">Guesses left:  </h5>
+    <p class="text-light ml-5 text-left col-1" id="guessesLeft"></p>
+</div>
 
         <!-- Input text box -->
 
 <label for="guessInput" class="text-white ml-5">Your guesses so far:</label>
 
-<input class="form-control w-50 ml-5" id="guessInput"></input>
+<input class="form-control w-50 ml-5" id="guessInput" onkeydown="pressLetter(event)"></input>
     
 <script src="assets/javascript/game.js"></script>
 </body>
